@@ -19,25 +19,33 @@ This project is a general-purpose web scraping tool designed to extract data fro
 2. Navigate to the project directory.
 3. Build the Docker image using the provided Dockerfile.
 
+
 ## Handle AWS credinitials
 For handling AWS credentials, it’s important not to hardcode them into your Dockerfile or image. Instead, use one of the following methods:
 - **Environment Variables**: Pass your AWS credentials as environment variables when you run the Docker container:
+
   ```docker run -e AWS_ACCESS_KEY_ID=your_access_key_id -e AWS_SECRET_ACCESS_KEY=your_secret_access_key my-python-app```
-  **Note:** Replace your_access_key_id and your_secret_access_key with your actual AWS credentials.
+
+  **Note:** Replace ```your_access_key_id``` and ```your_secret_access_key``` with your actual AWS credentials.
 - **IAM Roles**: If you’re running the container on an AWS EC2 instance, you can assign an IAM role to the instance with the necessary permissions, and the AWS SDK will automatically use these credentials.
 - **Docker Secrets**: If you’re using Docker Swarm, you can use Docker secrets to securely transmit your AWS credentials to the container.
 - **Bind Mounts**: You can also mount your local .aws credentials directory to the Docker container:
+
   ```docker run -v ~/.aws:/root/.aws:ro my-python-app```
+
   Remember to replace my-python-app with the actual name of your Docker image. Also, ensure that your application code is configured to use boto3 to interact with AWS services, utilizing the   
   credentials provided through one of these methods.
 
 ## Building your Docker image
 For building and running your Docker image, you would use commands like:
+
 ```
 docker build -t my-python-app .
 docker run my-python-app
 ```
-**Note:** Make sure to replace my-python-app with the name you want for your Docker image.
+
+**Note:** Make sure to replace ```my-python-app``` with the name you want for your Docker image.
+
 
 ## Automation
 The script can be automated using cron jobs to run at specified intervals. This ensures that the container runs the script periodically to scrape and update the data.
