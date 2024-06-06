@@ -37,8 +37,7 @@ For handling AWS credentials, it’s important not to hardcode them into your Do
   docker run -v ~/.aws:/root/.aws:ro my-python-app
   ```
 
-  Remember to replace my-python-app with the actual name of your Docker image. Also, ensure that your application code is configured to use boto3 to interact with AWS services, utilizing the   
-  credentials provided through one of these methods.
+  Remember to replace ```my-python-app``` with the actual name of your Docker image. Also, ensure that your application code is configured to use boto3 to interact with AWS services, utilizing     the credentials provided through one of these methods.
 
 ## Building your Docker image
 For building and running your Docker image, you would use commands like:
@@ -73,6 +72,8 @@ Special thanks to the people who helped me making this possible!
 **Peter Faso**: https://www.linkedin.com/in/peterfaso/
 
 **Imad Klailat**: https://github.com/klailatimad
+
+**Eni C.**: https://github.com/cornzyblack
 
 **Mohammed Alghizzi**: https://www.linkedin.com/in/mohammedalghizzi/
 
