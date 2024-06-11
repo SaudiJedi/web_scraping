@@ -69,12 +69,22 @@ Contributions to this project are welcome. Please fork the repository and submit
 # Credits
 Special thanks to the people who helped me making this possible!
 
-**Peter Faso**: https://www.linkedin.com/in/peterfaso/
+**Peter Faso**: 
 
-**Imad Klailat**: https://github.com/klailatimad
+https://www.linkedin.com/in/peterfaso/
 
-**Eni C.**: https://github.com/cornzyblack
+**Imad Klailat**: 
 
-**Mohammed Alghizzi**: https://www.linkedin.com/in/mohammedalghizzi/
+https://github.com/klailatimad
 
-**Khalid Sharahili**: https://github.com/kaledhub
+**Eni C.**:
+
+https://github.com/cornzyblack
+
+**Mohammed Alghizzi**: 
+
+https://www.linkedin.com/in/mohammedalghizzi/
+
+**Khalid Sharahili**: 
+
+https://github.com/kaledhub
